@@ -9,4 +9,4 @@ $node app.js
 
 ### Running app
 
-http://localhost:3000/cep/{cep_sem_mascara}
+http://localhost:3000/cep/{cep_without_mask}
