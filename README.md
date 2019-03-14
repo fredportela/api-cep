@@ -7,6 +7,6 @@ $npm i
 $node app.js
 ```
 
-### Running the tests
+### Running app
 
 http://localhost:3000/cep/{cep_sem_mascara}
