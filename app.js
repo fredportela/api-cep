@@ -1,12 +1,13 @@
 var express = require('express');
+var cors = require('cors')
 var cepCallback = require('cep-callback');
 var app = express();
 
 app.get('/', function(req, res){
-    res.send('<html><body>API</body></html>');
+    res.send('<html><body>CEP API</body></html>');
 });
 
-app.get('/cep/:cep', function(req, res){
+app.get('/cep/:cep', cors(), function(req, res){
     var cep = req.params.cep;
     cepCallback(cep, (err, cepData) => {
         res.send(cepData)
